@@ -35,15 +35,28 @@ body {
     margin-top: 20vh;
 }
 
+.logo img {
+    height: 80%;
+}
+
 .right{
     display: flex;
     flex-flow: column nowrap;
-    margin: 10px 30px;
+    padding: 0px;
+    margin: 0px;
 }
 
-.description {
-    font-size: 1.2rem;
-    width: 90%;
+
+.description, .login {
+    background-color: rgb(7, 7, 58);
+    color: white;
+    height: 100vh;
+    width: 70vw;
+
+}
+
+.description p, .login p, .form form, .form h2 {
+    margin: 20px;
 }
 
 label{
@@ -53,8 +66,44 @@ label{
 .form-row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     margin: 20px 0px;
 }
+
+
+label, input, button, .description, .login, .form h2{
+    font-size: 1.6rem;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(46, 127, 233);
+    border-style: solid;
+}
+
+button:hover {
+    background-color: skyblue;
+    border: 1px solid #0b65b9;
+}
+
+.form {
+    background-color: aliceblue;
+}
+
+input:valid {
+    background-color: lightgreen;
+}
+
+a {
+    color: lightblue;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
 
 
