@@ -4,20 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>  
     <title>Sign-Up-Form</title>
 </head>
 <body>
     <div class="container">
         <div class="left">
             <div class="logo">
-                <img width="75" height="75" src="https://img.icons8.com/ios/50/coins--v1.png" alt="coins--v1"/>
+                <img width="75" height="75" src="https://img.icons8.com/ios/50/coins--v1.png" alt="logo"/>
                 <h1>Finance Street</h1>
             </div>
         </div>
-        <div clas="right">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="right">
+            <div class="description">
+                <p>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <div class="form">
+                <h2>Sign Up!</h2>
+                <form>
+                    <div class="form-row">
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input id="first-name" name="first-name" type="text" required/>
+                        </div>
+                        <div>
+                            <label for="last-name">Last Name</label>
+                            <input id="last-name" name="last-name" type="text" required/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="test@example.com" required/>
+                        </div>
+                        <div>
+                            <label for="tel">Tel</label>
+                            <input id="tel" name="tel" type="tel" required/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password" required/>
+                        </div>
+                        <div>
+                            <label for="confirm-password">Conirm password</label>
+                            <input id="confirm-password" name="confirm-password" type="password" required/>
+                        </div>
+                    </div>
+                    <button>Create Account</button>
+                </form>
+            </div>
+            <div>
+                <p>Already haven an account? <a href="">Log in!</a></p>
+            </div>
         </div>
     </div>    
 </body>
